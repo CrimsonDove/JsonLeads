@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteRule ^redirect/(.*)$ redirect.php?r=$1&u=$2 [NC,L]
+RewriteRule ^rss.xml$ rssfeed.php [NC]
